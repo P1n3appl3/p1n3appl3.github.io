@@ -8,7 +8,7 @@ rm -rf _site
 mkdir _site
 
 # clone remote repo to "_site"
-git clone https://${GH_TOKEN}@github.com/p1n3appl3/p1n3appl3.github.io.git _site
+git clone https://${GH_TOKEN}@github.com/p1n3appl3/p1n3appl3.github.io.git --branch master _site
 
 # build with Jekyll into "_site"
 bundle exec jekyll build
