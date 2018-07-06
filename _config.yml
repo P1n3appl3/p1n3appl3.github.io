@@ -1,0 +1,59 @@
+title: Joseph Ryan
+email: josephryan3.14@gmail.com
+github_username: p1n3appl3
+baseurl: ""
+url: http://josephryan.me
+permalink: pretty
+markdown: kramdown
+highlighter: rouge
+description: A personal website to host my portfolio and blog
+
+exclude:
+    - README.md
+    - vendor
+
+plugins:
+    - jekyll-feed
+    - jekyll-mentions
+    - jekyll-sitemap
+    - jemoji
+
+picture:
+  source: "assets"
+  output: "generated"
+  markup: "picture"
+  presets:
+    default:
+      ppi: [1, 1.5]
+      attr:
+        class: blog-full
+        itemprop: image
+      source_lrg:
+        media: "(min-width: 40em)"
+        width: 700
+      source_med:
+        media: "(min-width: 30em)"
+        width: 450
+      source_default:
+        width: 350
+        height: 200
+
+# Tracker
+analytics: UA-105628196-1
+
+# Comments
+disqus-shortname: p1n3appl3
+
+# Optimization
+sass:
+  style: compressed
+
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
