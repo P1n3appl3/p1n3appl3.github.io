@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://josephryan.me/feed.xml" rel="self" type="application/atom+xml" /><link href="http://josephryan.me/" rel="alternate" type="text/html" /><updated>2018-07-06T08:07:09+00:00</updated><id>http://josephryan.me/</id><title type="html">Joseph Ryan</title><subtitle>A personal website to host my portfolio and blog</subtitle><entry><title type="html">So it begins…</title><link href="http://josephryan.me/2018/07/04/first/" rel="alternate" type="text/html" title="So it begins..." /><published>2018-07-04T00:00:00+00:00</published><updated>2018-07-04T00:00:00+00:00</updated><id>http://josephryan.me/2018/07/04/first</id><content type="html" xml:base="http://josephryan.me/2018/07/04/first/">&lt;p&gt;I’ve spent the past few days learning about the jekyll ecosystem, and I think that I finally have a good enough lay of the land to get my site up and running. Trawling through the myriad of themes, plugins, and deployment methods is rather exhausting, so I’m going to document the process in hopes that I’ll never have to do it again.&lt;/p&gt;
+
+&lt;h2 id=&quot;theme&quot;&gt;Theme&lt;/h2&gt;
+&lt;p&gt;Because content is irrelevant and what really matters is having a neat looking website, the most important decision is choice of theme. I want something clean and dark, and after agonizing over a bunch of choices I’ve picked @sharu725’s &lt;a href=&quot;https://github.com/sharu725/dark-side&quot;&gt;dark-side&lt;/a&gt; theme. My other favorite from the ones I considered is &lt;a href=&quot;https://github.com/streetturtle/jekyll-clean-dark&quot;&gt;clean-dark&lt;/a&gt; by @streetturtle. The latter is definitely more full featured, but I want to be able to understand most of what’s going on in my site so I’m going with the simplest option that still looks good. The nice thing about understanding it is that I can tweak things. So far I’ve changed a few lines of css to make the accent color a nice shade of blue and altered the way that headers are rendered. I’m also trying to change the mobile tab color, but I can’t really test that until this goes live.&lt;/p&gt;
+
+&lt;h2 id=&quot;plugins&quot;&gt;Plugins&lt;/h2&gt;
+
+&lt;p&gt;My theme came with disqus comments and google analytics built in. Any other features I want will come from the huge collection of jekyll plugins. The worst part is that there are usually several plugins that do the exact same thing, so I have to pay more attention to make sure I’m getting the most elegant/modern/working/featureful one.&lt;/p&gt;
+
+&lt;h3 id=&quot;inline-code-highlighting&quot;&gt;Inline code highlighting&lt;/h3&gt;
+
+&lt;p&gt;Jekyll already has support for syntax highlighting, however it forces all code to go in a new paragraph like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reader_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;. Check out this really long line of text which hopefully wraps correctly on mobile or at least scrolls correctly!&quot;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This would be annoying if I had a bunch of short code snippets that I wanted to highlight, so I got a plugin that lets me do it like this instead:&lt;code class=&quot;highlight language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reader_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;/code&gt;I wish I could just use backticks instead of liquid for code segments, and I may try to add that in the future.&lt;/p&gt;
+
+&lt;h3 id=&quot;github--mentions&quot;&gt;Github @ mentions&lt;/h3&gt;
+
+&lt;p&gt;I already used this one to mention the theme designers above. This way I can reference cool people like @jvns and @pervognsen with links to their github profiles instead of having to track down their personal sites.&lt;/p&gt;
+
+&lt;h3 id=&quot;jemoji-pineapple&quot;&gt;Jemoji :pineapple:&lt;/h3&gt;
+
+&lt;p&gt;This lets me specify emoji the same way you would in slack like :emoji-name:. Now I can express how angry I am about my favicon not displaying properly… :rage:. There’s also &lt;a href=&quot;https://gist.github.com/rxaviers/7360908&quot;&gt;this nice gist&lt;/a&gt; that I can use to look up a specific one if I forget it.&lt;/p&gt;
+
+&lt;h3 id=&quot;responsive-images&quot;&gt;Responsive images&lt;/h3&gt;
+
+&lt;p&gt;I remember when working on my &lt;a href=&quot;https://web.archive.org/web/20180704224759/http://www.josephryan.me/&quot;&gt;old website&lt;/a&gt; it was a pain to optimize all my images. This plugin does all the resizing at build time so that you can spend less time watching a page load and more time looking at my cats:&lt;/p&gt;
+&lt;picture&gt;
+    &lt;source srcset=&quot;http://josephryan.me/generated/cats-551by388-8c857e.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
+    &lt;source srcset=&quot;http://josephryan.me/generated/cats-551by388-8c857e.jpg&quot; media=&quot;(min-width: 40em)&quot; /&gt;
+    &lt;source srcset=&quot;http://josephryan.me/generated/cats-551by388-8c857e.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 30em) and (min-resolution: 144dpi)&quot; /&gt;
+    &lt;source srcset=&quot;http://josephryan.me/generated/cats-450by317-8c857e.jpg&quot; media=&quot;(min-width: 30em)&quot; /&gt;
+    &lt;source srcset=&quot;http://josephryan.me/generated/cats-525by300-8c857e.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
+    &lt;source srcset=&quot;http://josephryan.me/generated/cats-350by200-8c857e.jpg&quot; /&gt;
+    &lt;img src=&quot;http://josephryan.me/generated/cats-350by200-8c857e.jpg&quot; class=&quot;blog-full&quot; itemprop=&quot;image&quot; title=&quot;It also lets you add alt text!&quot; /&gt;
+  &lt;/picture&gt;
+
+&lt;h3 id=&quot;sitemap-and-feed&quot;&gt;Sitemap and feed&lt;/h3&gt;
+
+&lt;p&gt;Apparently sitemap makes it easier for search engines to index the contents of the site, and it was trivial to add so why not. Same reasoning for the RSS feed, the plugin doesn’t need any configuration and there’s a chance it’ll be useful to someone.&lt;/p&gt;
+
+&lt;h3 id=&quot;extras&quot;&gt;Extras&lt;/h3&gt;
+
+&lt;p&gt;There are a few other plugins I’ve played with and decided to leave out for now. I’ll list them here in case I change my mind:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;jekyll-time-to-read estimates reading time of a post&lt;/li&gt;
+  &lt;li&gt;jekyll-timeago represents absolute dates relatively&lt;/li&gt;
+  &lt;li&gt;jekyll-avatar shows github avatars&lt;/li&gt;
+  &lt;li&gt;jekyll-algolia site-wide search&lt;/li&gt;
+  &lt;li&gt;jekyll_indextank another search plugin&lt;/li&gt;
+  &lt;li&gt;jekyll-target-blank opens links in a new tab&lt;/li&gt;
+  &lt;li&gt;jekyll-gist embeds gists… duh&lt;/li&gt;
+  &lt;li&gt;jekyll-asciinema take a wild guess&lt;/li&gt;
+  &lt;li&gt;jekyll-youtube you get the idea&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;deployment&quot;&gt;Deployment&lt;/h2&gt;
+
+&lt;p&gt;At first it sounds really cool that you can just push your markdown to github and let them handle all of the site generation, but then I realized that they (understandably)  won’t run 99% of plugins so they aren’t exposed to arbitrary code. I was about to resign myself to just generate it locally and push the entire static site to github, but someone (&lt;em&gt;cough&lt;/em&gt; @rrbutani &lt;em&gt;cough&lt;/em&gt;) told me that using Travis CI to build it for you, and who can resist the allure of free compute. It also can do nice things like blocking an update if you introduce broken links.&lt;/p&gt;
+
+&lt;p&gt;Despite how much time I spent configuring everything, I’m still impressed by how easy it was to get a functional personal site that looks better than Stallman’s ever will. The best part is that the combination of jekyll + travis + disqus + github pages + namecheap’s edu program lets me run my site completely for free (I do have to pay for the domain after the free year is up but that’s like the cost of dinner for another year)&lt;/p&gt;</content><author><name></name></author><category term="meta" /><summary type="html">I’ve spent the past few days learning about the jekyll ecosystem, and I think that I finally have a good enough lay of the land to get my site up and running. Trawling through the myriad of themes, plugins, and deployment methods is rather exhausting, so I’m going to document the process in hopes that I’ll never have to do it again.</summary></entry></feed>
