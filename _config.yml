@@ -41,9 +41,6 @@ picture:
         width: 350
         height: 200
 
-# Tracker
-analytics: UA-105628196-1
-
 # Comments
 disqus-shortname: p1neapple
 
