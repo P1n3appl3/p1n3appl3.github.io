@@ -11,6 +11,9 @@ description: A personal website to host my portfolio and blog
 exclude:
     - README.md
     - vendor
+    - scripts
+    - Gemfile
+    - Gemfile.lock
 
 plugins:
     - jekyll-feed
@@ -42,7 +45,7 @@ picture:
 analytics: UA-105628196-1
 
 # Comments
-disqus-shortname: p1n3appl3
+disqus-shortname: p1neapple
 
 # Optimization
 sass:
