@@ -29,7 +29,7 @@ picture:
     default:
       ppi: [1, 1.5]
       attr:
-        class: blog-full
+        class: center-image
         itemprop: image
       source_lrg:
         media: "(min-width: 40em)"
