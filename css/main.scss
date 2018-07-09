@@ -40,6 +40,10 @@ $on-laptop:        800px;
     display: block;
 }
 
+video {
+    width: 90%;
+}
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
