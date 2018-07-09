@@ -8,6 +8,10 @@ markdown: kramdown
 highlighter: rouge
 description: A personal website to host my portfolio and blog
 
+collections:
+  projects:
+      output: true
+
 exclude:
     - README.md
     - vendor
@@ -29,7 +33,7 @@ picture:
     default:
       ppi: [1, 1.5]
       attr:
-        class: center-image
+        class: center
         itemprop: image
       source_lrg:
         media: "(min-width: 40em)"

@@ -40,31 +40,19 @@ body {
 h1 {
     color: $h-color;
     font-size: 30px;
+    text-align: center;
 }
 
 h2 {
     color: $h-color;
     font-size: 25;
 }
-
     
 h3,h4,h5,h6 {
     color: $h-color;
     font-size: 20px;
 }
 
-h1:before {
-    content: "# ";
-}
-//h2:before {
-//    content: "## ";
-//}
-//h3:before{
-//    content: "### ";
-//}
-//h4:before{
-//    content: "#### ";
-//}
 a {
     color: $h-color;
     text-decoration: none;
