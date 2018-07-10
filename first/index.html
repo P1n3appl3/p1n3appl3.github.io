@@ -14,7 +14,7 @@
 --><html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-105628196-1"></script><script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-105628196-1');</script><meta name="theme-color" content="black">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script><meta name="theme-color" content="black">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,9 +60,9 @@
 <h2 id="deployment">Deployment</h2>
 <p>At first it sounds really cool that you can just push your markdown to github and let them handle all of the site generation, but then I realized that they (understandably) won’t run 99% of plugins so they aren’t exposed to arbitrary code. I was about to resign myself to just generate it locally and push the entire static site to github, but someone (<em>cough</em> <a href="https://github.com/rrbutani" class="user-mention">@rrbutani</a> <em>cough</em>) told me about using Travis CI to build it, and who can resist the allure of free compute. It also can do nice things like blocking an update if you introduce broken links.</p>
 <p>Despite how much time I spent configuring everything, I’m still impressed by how easy it was to get a functional personal site that looks better than Stallman’s ever will. The best part is that the combination of jekyll + travis + disqus + github pages + namecheap’s edu program lets me run my site completely for free (I do have to pay for the domain after the free year is up but that’s like the cost of dinner for another year)</p>
-<div id="disqus_thread"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js"></script><script>anchors.visible='touch';anchors.add();</script><div id="disqus_thread"></div>
 <script defer> (function() { var d = document, s = d.createElement('script'); s.src = '//p1neapple.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
-<footer><p><small>Copyrights © 2018 Joseph Ryan</small></p></footer>
+<footer><p><small>Copyrights © 2018 Joseph Ryan</small></p></footer><script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-105628196-1', 'auto'); ga('send', 'pageview');</script>
 </body>
 </html>
