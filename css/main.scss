@@ -13,18 +13,16 @@ $base-lh:          1.7;
 
 $spacing-unit:     30px;
 
-
 // $h-color:          #dce027; // yellow
 // $h-color:          #07da21; // green
 // $h-color:          #9315c5; // puple
 // $h-color:          #b92050; // red
 $h-color:           #4286f4; // blue
-// $h-color:          #2377ff // another blue (just in case)
+//$h-color:          #2377ff // another blue (just in case)
 
-$text-color:       #777;
+$text-color:       #888;
 $background-color: #fdfdfd;
 $brand-color:      #60c17d;
-
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -34,15 +32,6 @@ $grey-color-dark:  darken($grey-color, 25%);
 $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
-
-.center {
-    margin: 0 auto;
-    display: block;
-}
-
-video {
-    width: 90%;
-}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -56,8 +45,6 @@ video {
         @content;
     }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

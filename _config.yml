@@ -3,14 +3,15 @@ email: josephryan3.14@gmail.com
 github_username: p1n3appl3
 baseurl: ""
 url: http://josephryan.me
-permalink: pretty
+permalink: /:title/
 markdown: kramdown
 highlighter: rouge
 description: A personal website to host my portfolio and blog
 
 collections:
   projects:
-      output: true
+    output: true
+    permalink: /:title/
 
 exclude:
     - README.md
@@ -44,6 +45,9 @@ picture:
       source_default:
         width: 350
         height: 200
+
+# Tracker
+analytics: UA-105628196-1
 
 # Comments
 disqus-shortname: p1neapple

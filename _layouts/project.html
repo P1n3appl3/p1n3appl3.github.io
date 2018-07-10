@@ -5,7 +5,7 @@ layout: default
 <h1>{{page.title}}</h1>
 <p style="text-align:center;">{{page.description}}</p>
   {% if page.video %}
-<video class="center" autoplay loop>
+<video class="center" autoplay loop mute>
   <source src="/assets/{{ page.video }}" type="video/mp4" />
 </video>
   {% else %}

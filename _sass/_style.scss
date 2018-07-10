@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     text-rendering: geometricPrecision;
-   
 }
 ::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -47,7 +46,7 @@ h2 {
     color: $h-color;
     font-size: 25;
 }
-    
+
 h3,h4,h5,h6 {
     color: $h-color;
     font-size: 20px;
@@ -56,17 +55,11 @@ h3,h4,h5,h6 {
 a {
     color: $h-color;
     text-decoration: none;
-    border-bottom: 1px solid;
     &:hover {
         background-color: $h-color;
         color: #444;
     }
 }
-
-a[target="_blank"]::after {
-    content: " " url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" class=\"i-external\" viewBox=\"0 0 32 32\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"#0a5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"9.38%\"><path d=\"M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18\" /></svg>');
-}
-
 
 header {
      border-bottom: 1px dashed $h-color;
@@ -91,10 +84,19 @@ nav {
     }
 }
 
- img {
+.center {
+    margin: 0 auto;
+    display: block;
+}
+
+img {
     max-width: 100%;
 }
- 
+
+video {
+    max-width: 100%;
+}
+
 code, pre {
     overflow: auto;
     font-size: 16px;
@@ -116,7 +118,6 @@ blockquote {
     h1:before{
         content: "";
     }
-    
     &:hover > .title {
         color: #000;
     }
@@ -140,15 +141,9 @@ footer {
     }
 }
 
-.post-list {
-    .date {
-        color: #666;
+.anchorjs-link {
+    &:hover {
+        background-color: black;
+        color: white;
     }
 }
-
-.post-title {
-    h2:hover {
-        color: $text-color;
-    }
-}
-
