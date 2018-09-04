@@ -2,7 +2,7 @@ title: Joseph Ryan
 email: josephryan3.14@gmail.com
 github_username: p1n3appl3
 baseurl: ""
-url: http://josephryan.me
+url: https://josephryan.me
 permalink: /:title/
 markdown: kramdown
 highlighter: rouge
