@@ -1,1 +1,1 @@
-Sitemap: http://josephryan.me/sitemap.xml
+Sitemap: https://josephryan.me/sitemap.xml
