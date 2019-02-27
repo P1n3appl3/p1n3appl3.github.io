@@ -14,6 +14,6 @@ title: Projects
 {% picture {{ project.image }} alt="{{ project.title }}" %}
 {% endif %}
 <p style="text-align:center;">{{ project.description }}</p>
-<p style="text-align:center;"><a href="{{ project.url }}">Read more</a> or <a href="https://github.com/{{ project.repo }}">View on Github</a></p>
+<p style="text-align:center;"><a href="https://github.com/{{ project.repo }}">View on Github</a></p>
 {% endfor %}
 
