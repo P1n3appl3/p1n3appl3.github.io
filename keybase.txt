@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/p1neapple
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://josephryan.me
+  * I am p1neapple (https://keybase.io/p1neapple) on keybase.
+  * I have a public key with fingerprint 576B 6E83 97D4 6334 8DE9  C6B4 9409 3348 D32D D171
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01018e65bd28843d131a1144b10762cac286d7fa7388cbcd885fc1a67ec721474c660a",
+      "fingerprint": "576b6e8397d463348de9c6b494093348d32dd171",
+      "host": "keybase.io",
+      "key_id": "94093348d32dd171",
+      "kid": "01018e65bd28843d131a1144b10762cac286d7fa7388cbcd885fc1a67ec721474c660a",
+      "uid": "e533bdff4e1cace46ddde8251493a119",
+      "username": "p1neapple"
+    },
+    "service": {
+      "hostname": "josephryan.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1557823074,
+  "expire_in": 157680000,
+  "prev": "8dae3f0371dd24e829708bc55753445e86fb32f48e2fd7760144c977a678b6b8",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMIsAnicrVJbSBRRGN61tnIhKbpQQlYDtRZic2bOzDm7hhRJllYgGcZSLjNzzriT
+OjPN7FrSBelmZXmhIuyhMurBbkaXBwtLwwpKumOmEPaSkFT0UlKQnZF667Hzcvj/
+833f+b+Pv3vyOF/Qn37o1rIVd3o6/E+6mpO+Tf271R2capFqLrKDK6djF60g1E3E
+yg3CRTge8ABTWVKJgDEUCRCBAgCEKuCRLGiKJmCZIF1BIsaaqhGMJV0DioyohgQA
+EdRkmVe4LE43zDLq2I5hJpishGRVplgMIwJlUYSY0LAmqzAM+fBYKQqEAAQYMW65
+HoMNpyouzTYs1mNFbGy8f+D/89zJMTkqiaJKdB1SwLgUyoQQigUJwLDIdMMe0KWO
+qVRShraBSRXbrqDcriyOtasMjXrJelb+QLZYLrXjTrViZrM6i7MdK2FpVgV7iicS
+thvxqIlq28Nuo2rsj0pMNUzCkmSMKuq4hmVyEcCQWsLwZIEkISyIPIJZHN1uGw6N
+GR6CxY15drx/aBWTxEShos6LCBAiQOYkjHisaowuiRBKFMu6Kgo6xFTQCUIyz6LT
+wgixgLAqq5jzfG01LS4isjGVMibpGmWmkkg6zPT9zk3jff6gb0IgxdswXzB1yt+9
+q++d+Ct0Y5D+RNU0Lw2f7PMt9Z9b3znrVcqL3P7hoBn40XSp3unNm9ia/3Th8SPF
+q62BnJLI16MH7g3mvW9adyVWuPb02njhze5at2Xk+5spX+wL0b59HWcbPje3txUN
+5a/O8T0OZG6OBtoeJOsKSjI+lIbqUpbtCTW0vOvMqPzxa/cr38x6O5A5Y2b60LSe
+2o1G4+RJDc/mTs3tamncYA9cfn39ddHiE6nnlxes7Ek2pzy/+61haPr+/GLtSNeZ
+a+7w/OhoTfdOqaa9rskf/3R7ybGug1dfDsVHQ8F99071JZ+n1ax5dPhif+uiBfUf
+ce7DQ6uKQrWlI9Hy2Vq0ormoeG/dnLfz0n4DwVs+ZQ==
+=sDej
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/p1neapple
+
+==================================================================
