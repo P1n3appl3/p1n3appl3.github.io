@@ -3,7 +3,7 @@ layout: page
 title: Hello
 ---
 
-If you're thinking about hiring me, here's [my resume](assets/resume.pdf).
+If you're thinking about hiring me, here's [my resume](resume.pdf).
 
 To reach me use my email: [{{ site.email }}](mailto:{{ site.email }}).
 
