@@ -7,7 +7,7 @@ gem "github-pages"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-mentions"
-  gem "jekyll-picture-tag"
+  gem "jekyll-picture-tag-latest"
   gem "jekyll-sitemap"
   gem "jemoji"
 end
