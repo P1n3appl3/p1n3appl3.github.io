@@ -28,23 +28,6 @@ plugins:
 
 picture:
   source: "assets"
-  output: "generated"
-  markup: "picture"
-  presets:
-    default:
-      ppi: [1, 1.5]
-      attr:
-        class: center
-        itemprop: image
-      source_lrg:
-        media: "(min-width: 40em)"
-        width: 700
-      source_med:
-        media: "(min-width: 30em)"
-        width: 450
-      source_default:
-        width: 350
-        height: 200
 
 # Tracker
 analytics: UA-105628196-1

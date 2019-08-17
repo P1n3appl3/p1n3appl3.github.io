@@ -1,0 +1,7 @@
+markup_presets:
+  default:
+    format: [webp, original]
+    widths: [400, 600, 800]
+    attributes:
+        img: 'class="center"'
+

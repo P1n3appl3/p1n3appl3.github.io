@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #dce027;
+    background-color: #4286f4;
 }
 
 ::-webkit-scrollbar-track {
@@ -90,11 +90,13 @@ nav {
 }
 
 img {
-    max-width: 100%;
+    padding: 15px 0px 5px;
+    max-width: 90%;
 }
 
 video {
-    max-width: 100%;
+    padding: 15px 0px 5px;
+    max-width: 90%;
 }
 
 code, pre {
