@@ -24,7 +24,6 @@ plugins:
     - jekyll-feed
     - jekyll-mentions
     - jekyll-sitemap
-    - jemoji
 
 picture:
   source: "assets"

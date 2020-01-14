@@ -9,5 +9,4 @@ group :jekyll_plugins do
   gem "jekyll-mentions"
   gem "jekyll-picture-tag-latest"
   gem "jekyll-sitemap"
-  gem "jemoji"
 end
